@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">SoMo-PÁ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-linksH">
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLinkActive="active" routerLink="/">Home</a>
+        </li>
+        <ng-container *ngIf="!authService.loggedIng(); else loggedIng">
+         
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/signin">Iniciar Seccion</a>
+          </li>
+        </ng-container>
+
+
+        <ng-template #loggedIng>
+          <li class="nav-item">
+            <a class="nav-link btnLogout" routerLinkActive="active" routerLink="/perfil" >My Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnLogout" (click)="authService.logout()">Cerrar</a>
+          </li>
+        </ng-template>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
