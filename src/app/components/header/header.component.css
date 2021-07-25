@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "titulos";
+    src: url("/assets/fonts/Courgette/Courgette-Regular.ttf");
+
+  } 
+
+li, span, h4{
+    font-family: 'titulos';
+}
+
+h4{
+    color: #fff;
+    font-family: 'titulos';
+}
+.nav-linksH{
+    margin-left: auto;
+}
+
+.btnLogout{
+    cursor: pointer;
+}
+
+.bg-navBar{
+    background-color: #000000;
+    color: #fff;
+}
