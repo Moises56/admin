@@ -1,6 +1,9 @@
 /* * *
 css Perfil Admin
 ***/
+.img-responsive{
+  transform: translateX(100px);
+}
 
 body {
     background: #F1F3FA;
