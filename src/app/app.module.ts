@@ -14,6 +14,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 
 import { AuthGuard } from './auth.guard';
 import { TokenService } from './services/token.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { TokenService } from './services/token.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [
     AuthGuard,

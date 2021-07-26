@@ -1,3 +1,4 @@
+import { componentFactoryName } from '@angular/compiler';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PerfilComponent } from './perfil.component';
