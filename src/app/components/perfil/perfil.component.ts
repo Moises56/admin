@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { CategoryService } from '../../services/category.service';
+=======
+import { AuthService } from "../../services/auth.service";
+import {faSignOutAlt, faUsersCog,faDolly, faUsers, faSitemap, faBriefcase,faMotorcycle} from '@fortawesome/free-solid-svg-icons';
+>>>>>>> 4ce1ac628aa1648cd4b45850a560f70b9304a83e
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
+<<<<<<< HEAD
     public isCollapsed = false;
 
   Categorias: any = [];
@@ -20,6 +26,15 @@ export class PerfilComponent implements OnInit {
     nombreUser: any;
     apellidoUser: any;
 
+=======
+  faSitemap =faSitemap;
+  faBriefcase=faBriefcase;
+  faMotorcycle=faMotorcycle;
+  faUsers=faUsers;
+  faDolly=faDolly;
+  faUsersCog=faUsersCog;
+  faSignOutAlt=faSignOutAlt;
+>>>>>>> 4ce1ac628aa1648cd4b45850a560f70b9304a83e
   constructor(
     public authService: AuthService,
     private categoryService: CategoryService,
