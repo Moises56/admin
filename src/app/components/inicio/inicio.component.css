@@ -1,0 +1,29 @@
+ /*img { 
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container{
+    width: 100%;
+  }*/
+  
+  
+/* 1 columna para smartphones */
+breakpoint  {
+    max-width: 100%;
+    display: inline-block;
+    }
+    /* 2 columnas para tablets */
+    @media (min-width: 420px) {
+    breakpoint  {
+    max-width: 48%;
+    }
+    }
+    /* 4 columnas para grandes dispositivos*/
+    @media (min-width: 760px) {
+    breakpoint  {
+    max-width: 24%;
+    }
+    }

@@ -36,7 +36,7 @@ export class SigninComponent implements OnInit {
          localStorage.setItem('apellidoUser', res.apellido ); // * Guardando token en localStorage
          this.token = res.token;
          localStorage.setItem('token', res.token ); // * Guardando token en localStorage
-         alert('***Estas registrado Vienenido')
+         alert('***Estas registrado Bienvenido')
          this.router.navigate( ['/perfil'] );
        },
        err => console.log(err)
