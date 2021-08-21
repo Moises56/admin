@@ -17,15 +17,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AuthGuard } from './auth.guard';
 import { TokenService } from './services/token.service';
-<<<<<<< HEAD
 import { OrdenesComponent } from './components/ordenes/ordenes.component';
 import { MotoristasComponent } from './components/motoristas/motoristas.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
-=======
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
->>>>>>> 4ce1ac628aa1648cd4b45850a560f70b9304a83e
 
 @NgModule({
   declarations: [
@@ -46,15 +41,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-<<<<<<< HEAD
     ReactiveFormsModule,
     HttpClientModule,
     FontAwesomeModule
-=======
-    HttpClientModule,
-    FontAwesomeModule,
-    NgbModule
->>>>>>> 4ce1ac628aa1648cd4b45850a560f70b9304a83e
   ],
   providers: [
     AuthGuard,

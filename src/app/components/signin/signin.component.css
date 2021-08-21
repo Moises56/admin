@@ -30,6 +30,14 @@ body{
 	/* background-color: #4953b4; */
 	overflow-x: hidden;
 }
+.auth{
+  color: #f7f6fa;
+  background: #108dc7 !important;  
+  background: -webkit-linear-gradient(to right, #ef8e38, #108dc7) !important;  
+  background: linear-gradient(to right, #ef8e38, #108dc7) !important; 
+  
+}
+
 a {
 	cursor: pointer;
   transition: all 200ms linear;
