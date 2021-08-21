@@ -1,0 +1,28 @@
+<h3 class="text-center"> Tomar Ordenes Disponibles</h3>
+<div class="profile-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 col-sm-4 pt-2" *ngFor="let order of Orden">
+        <div class="card">
+            <div *ngFor="let orden of order.cart">
+                <img src="{{orden.imagenProducto}}" class="card-img-top" alt="...">
+                <h6 class="card-title">{{orden.nombreProducto}} | {{orden.cantidad}} | ${{orden.precio}}</h6>
+            </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Direccion: {{order.direccion}}</h5>
+            <p class="card-text">{{order.email}}</p>
+            <span class="card-text">{{order.user}}</span>
+          </div>
+        </div>
+        <div class="card-footer">
+            <p>Estado: <b>Disponible</b></p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  

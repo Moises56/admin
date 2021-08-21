@@ -1,6 +1,16 @@
 /* * *
 css Perfil Admin
 ***/
+
+.visible{
+  display: block;
+}
+
+.no-visible{
+  display: none;
+}
+
+
 .img-responsive{
   transform: translateX(100px);
 }

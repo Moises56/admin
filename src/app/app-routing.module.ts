@@ -7,6 +7,9 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { PerfilComponent} from './components/perfil/perfil.component';
+import { EmpresasComponent} from './components/empresas/empresas.component';
+import { MotoristasComponent} from './components/motoristas/motoristas.component';
+import { ClientesComponent} from './components/clientes/clientes.component';
 
 import { AuthGuard } from './auth.guard';
 
@@ -36,7 +39,19 @@ const routes: Routes = [
   {
     path: 'categoria',
     component: CategoriasComponent
-  }
+  },
+  {
+    path: 'empresa',
+    component: EmpresasComponent
+  },
+  {
+    path: 'motorista',
+    component: MotoristasComponent
+  },
+  {
+    path: 'cliente',
+    component: ClientesComponent
+  },
 
 ];
 

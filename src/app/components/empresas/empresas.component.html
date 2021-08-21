@@ -1,0 +1,26 @@
+<h3 class="text-center"> Empresas</h3>
+<a routerLink="/perfil" class="btn btn-outline-primary">regresar</a>
+<a class="btn btn-outline-primary">New Empresa</a>
+
+<div class="profile-content">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-md-4 col-sm-4 pt-2" *ngFor="let emp of Empresas">
+          <div class="card">
+            <!-- <img *ngFor="let emps of emp.empresas" src="/assets/{{emps.imagen}}" class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">{{emp.nombreCategoria}}</h5>
+              <p *ngFor="let emps of emp.empresas" class="card-text">{{emps.nombreEmpresa}} ->
+                <span>{{emps.productos.length}} productos</span>
+                <!-- <img *ngFor="let emps of emp.empresas" src="/assets/{{emps.imagen}}" class="card-img-top" alt="..."> -->
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+

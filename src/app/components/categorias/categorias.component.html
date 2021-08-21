@@ -1,1 +1,46 @@
-<p>categorias works!</p>
+<h3 class="text-center"> CATEGORIAS</h3>
+<a routerLink="/perfil" class="btn btn-outline-primary">regresar</a>
+<a class="btn btn-outline-primary" (click)="abrirTomarOrdenModalModal(openTomarOrdenModal)">New Categoria</a>
+
+<div class="profile-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 col-sm-4 pt-2" *ngFor="let cat of Categorias">
+        <div class="card" [style.background]='cat.color'>
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">{{cat.nombreCategoria}}</h5>
+            <p class="card-text">{{cat.descripcion}}</p>
+            <span class="card-text">{{cat.empresas.length}} comercios</span>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Todo Modal Nuevo Instructor -->
+<ng-template #openTomarOrdenModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Nueva Categoria</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('cerro con la X')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" >
+      <div class="row">
+        <div class="col-12">
+            <h1>New Categoria</h1>
+        </div>
+      </div>
+        
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-success" (click)="modal.close('Boton Cerrar')">Cerrar</button>
+      <button type="button" class="btn btn-outline-success" (click)="tomarOrden()">Guardar</button>
+    </div>
+  </ng-template>
+  

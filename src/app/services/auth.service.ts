@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private URL = 'http://localhost:3000/user';
+  private URL = 'https://somopa.herokuapp.com/user';
+
+  // private URL = 'http://localhost:3000/user';
 
   constructor(
     private http: HttpClient,
@@ -39,6 +43,17 @@ export class AuthService {
     localStorage.removeItem('token');
     this.router.navigate(['/signin']);
   }
+
+
+
+  // * obtener usuario logeeado
+    getPerfil(token: string):Observable<any>{
+      return this.http.get(this.URL + '/perfil', {});
+    }
+  // * obtener usuario logeeado
+    getUser(idUser: any):Observable<any>{
+      return this.http.get(`http://localhost:3000/admin/${idUser}/users`, {});
+    }
 
 
 }
